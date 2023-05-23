@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Escondrijo</title>
+    <style>
+        body {
+        background-image: url("img/pexels-irina-iriser-1379636.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        }
+        </style>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="zorro(6).png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Cormorant:wght@300&family=Crimson+Text&family=Playfair+Display&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    
+    <link href="css/estilosEscondrijo.css" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="gorraA">
+        <nav id='encabezado'>
+            <span>
+                <h2 class="textoGorra">Tu escondrijo de secretos.</h2>
+            </span>
+
+        </nav>
+        <nav class="imagenesNav">
+            
+            <img class="botones" id='botonG' src="img/zorro_guardador.png"  alt="Guardar">
+        </nav>
+    </header >
+    <main id="contenido" class="menuPrincipal">
+        <div class="secreto-actual">
+            <input class="titulo" placeholder="Titulo" type="text" id="titulo-actual" name="titulo">
+            <textarea class="bloqueTexto" placeholder="Tu secreto estará aquí… " id="contenido-actual" name="contenido" cols="30" rows="30"></textarea>
+        </div> 
+        <aside id="secretos"> 
+            <div class="secretos-contenedores" id="contenedorDeSecretos">
+            </div>
+        </aside>
+
+    </main>      
+    <strong class="desarrollador">
+        Creado por HozsBorne.
+    </strong>
+            <script src="js/LogicaDelEscondrijo/app.js"></script>
+            <script src="js/scrollreveal2.js"></script> 
+            <script src="js/animaciones2.js"></script> 
+            <script src="js/LogicaDelEscondrijo/sweetalert2.js"></script>
+</body>
+</html>

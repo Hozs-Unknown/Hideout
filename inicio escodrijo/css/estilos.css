@@ -1,0 +1,241 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(0, 0, 0);
+	background-image: url("/img/fondo2.png");
+	background-repeat: cover;
+	background-repeat: no-repeat; 
+	background-size: cover;
+	margin: 0;
+
+
+	/* redimensiona la imagen de fondo de la pagina web a diferentes resoluciones */
+	
+	display: block;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+
+	/* overflow-y: hidden */
+
+}
+
+header {
+	display: flex;
+	min-height: 70px;
+	background-color: rgba(133, 17, 17, 0.315);
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 40px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	box-shadow: 0 10px 30px rgb(0, 0, 0);
+	/* transition: .6s; */
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img{
+	height: 50px;
+	margin: right 10px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+p  {
+	text-decoration: double;
+}
+
+h1 {
+	letter-spacing: 1vh;
+	font-family: 'Shippori Mincho', serif;
+	/* font-family: 'Playfair Display', serif; */
+	text-align: center;
+	color: white;
+}
+
+h2 {
+	font-family: 'Crimson Text', serif;
+	font-size: 125%;
+	font-family: 'Cardo', serif;
+	text-decoration: underline;
+	color: white;
+}
+
+
+nav a {
+	font-weight: 600;
+	color: white;
+}
+
+nav a:hover{
+	color: gray;
+}
+
+@media (max-width:700px){
+	header{
+		flex-direction: column;
+	}
+	
+	nav{
+		padding: 10px 0px;
+	}
+}
+
+/* .overlay:before {
+	background-color: rgba(42, 62, 116, 0.2);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+  }
+   */
+
+.content{
+	justify-content: center;
+    padding-top: 80px
+}
+
+.mensaje {
+    max-width: 890px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+/* 	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+    padding-top: 75px; */
+}
+
+.mensaje h1 {
+	word-spacing: 0.25em;
+	font-size: 50px;
+	position: relative;
+    margin: 0;
+
+	margin: 20px;
+	line-height: 1.5em;
+}
+
+.mensaje p {
+	position: relative;
+    margin: 45px 0 30px;
+    font-size: 20px;
+	/* text-decoration: underline; */
+    color: rgb(237, 237, 237);
+}
+ 
+
+/* boton de la pagina de inicio */
+
+/* .boton {
+
+	display: flex;
+	width: 50px;	
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	background-color: crimson;
+	border-radius: 10px;
+	padding: 15px 30px;
+	max-height: 50px;
+	 
+	
+} */
+ 
+.btnEntrar {
+	margin: 10px;
+	position: relative;
+	padding: 10px 15px;
+	border: none;
+	outline: none;
+	background-color: rgba(66, 35, 35, 0.836);
+	color: rgb(224, 224, 224);
+	cursor: pointer;
+	transition: .5s;
+	overflow: hidden;
+}
+
+.btnEntrar :hover {
+	color:rgb(255, 255, 255)
+	/* border: 1px solid red; */
+} 
+
+
+/* Animacion del boton usando los span */
+.btnEntrar span{
+	position: absolute;
+	background:rgba(221, 42, 42, 0.747);
+	transition: .5s;
+}
+
+.btnEntrar span:nth-child(1) {
+	width: 100%;
+	height: 1px;
+	top: 0;
+	left: -100%;
+}
+
+.btnEntrar span:nth-child(2) {
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	right: -100%;
+}
+
+.btnEntrar span:nth-child(3) {
+	width: 1px;
+	height: 100%;
+	bottom: -100%;
+	left: 0;
+}
+
+.btnEntrar span:nth-child(4) {
+	width: 1px;
+	height: 100%;
+	top: -100%;
+	right: 0;
+}
+
+.btnEntrar:hover span:nth-child(1) {
+	left: 0;
+}
+
+.btnEntrar:hover span:nth-child(2) {
+	right: 0;
+}
+
+.btnEntrar:hover span:nth-child(3) {
+	bottom: 0;
+}
+
+.btnEntrar:hover span:nth-child(4) {
+	top: 0;
+}
+
+
+/* Aplicar el efecto de blur al encabezado */
+
+#encabezado {
+	-webkit-backdrop-filter: blur(15px);;
+	backdrop-filter: blur(15px);
+	background-color: rgba(70, 28, 28, 0.2);
+}
+
