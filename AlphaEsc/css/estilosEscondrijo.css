@@ -171,6 +171,9 @@ textarea:focus{
     font-family: 'Crimson Text', serif;
 }
 
+.desarrollador, a {
+    color:rgb(255, 255, 255);
+}
 
 .secretos-contenedores {
     padding: 0.5rem;
